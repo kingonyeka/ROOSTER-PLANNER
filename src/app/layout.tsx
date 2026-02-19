@@ -16,8 +16,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body className={manrope.className}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={manrope.className} suppressHydrationWarning>
         <Providers>{children}</Providers>
       </body>
     </html>
