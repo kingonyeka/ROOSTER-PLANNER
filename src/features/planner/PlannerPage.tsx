@@ -15,8 +15,9 @@ import {
 import { FiChevronDown, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { Add, Profile2User, FilterSearch } from "iconsax-reactjs";
 import { useEffect, useRef, useState, useMemo } from "react";
-import { CalendarGrid } from "./components/CalendarGrid";
+
 import { CalendarDropdown } from "./CalendarDropdown";
+import { CalendarGrid } from "./components/CalenderGrid";
 // import { RosterPanel } from "./RosterPanel";
 
 type TabMode = "Live" | "Planner";
