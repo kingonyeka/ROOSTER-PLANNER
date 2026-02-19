@@ -9,6 +9,12 @@ type Room = {
   name: string;
 };
 
+type CalenderGridProps = {
+  date: string;
+  activeTab: TabMode;
+  viewMode: ViewMode;
+};
+
 type Shift = {
   id: string;
   roomId: string;
@@ -135,7 +141,7 @@ function groupByStart(list: Shift[]) {
   return map;
 }
 
-export function CalenderGrid() {
+export function CalenderGrid({ date, activeTab, viewMode }: CalenderGridProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalShifts, setModalShifts] = useState<Shift[]>([]);
   const [modalTitle, setModalTitle] = useState("Wednesday 31");
