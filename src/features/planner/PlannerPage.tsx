@@ -17,7 +17,7 @@ import { Add, Profile2User, FilterSearch } from "iconsax-reactjs";
 import { useEffect, useRef, useState, useMemo } from "react";
 
 import { CalendarDropdown } from "./CalendarDropdown";
-import { CalendarGrid } from "./components/CalenderGrid";
+import { CalenderGrid } from "./components/CalenderGrid";
 // import { RosterPanel } from "./RosterPanel";
 
 type TabMode = "Live" | "Planner";
@@ -423,7 +423,7 @@ useEffect(() => {
       </Box>
 
       <Box mx="30px" mt="14px">
-        <CalendarGrid date={isoDate} activeTab={tab} viewMode={viewMode} />
+        <CalenderGrid date={isoDate} activeTab={tab} viewMode={viewMode} />
       </Box>
     </Box>
   );

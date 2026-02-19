@@ -135,7 +135,7 @@ function groupByStart(list: Shift[]) {
   return map;
 }
 
-export function CalendarGrid() {
+export function CalenderGrid() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalShifts, setModalShifts] = useState<Shift[]>([]);
   const [modalTitle, setModalTitle] = useState("Wednesday 31");
